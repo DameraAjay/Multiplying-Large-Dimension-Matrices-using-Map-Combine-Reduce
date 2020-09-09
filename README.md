@@ -31,3 +31,8 @@ Multiplying large dimension matrices using map combine reduce framework
 	- Now perfor dot product
 	- print (i k result)
 	- repeat for every (i,k)
+	
+# Execution
+	- ( python mapper.py file1.txt | sort | python combiner.py; python mapper.py file2.txt | sort | python combiner.py; python mapper.py file3.txt | sort | python combiner.py;) | sort | python reducer.py > result.tx
+	or
+	- make (just type 'make' in terminal where project files are present)
